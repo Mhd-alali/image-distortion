@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html{
+  overscroll-behavior: none;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+main{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.scrollable{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+.img-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  position: absolute;
+  height: 60%;
+  width: 40%;
+  visibility: hidden;
+}
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
